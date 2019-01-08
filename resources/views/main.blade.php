@@ -10,6 +10,7 @@
             @include('partials._nav')
 
             <div class="container">
+                @include('partials._messages')
 
                 @yield('content') <!-- anything with @ is blade-->
 
@@ -18,6 +19,8 @@
             </div> <!-- end of container-->
 
                 @include('partials._javascripts')
+
+                @yield('scripts')
 
         </body>
 </html>
